@@ -10,7 +10,7 @@ contract TestLibrary{
         return _base.increment();
     }
         function testDecrement(uint _base)public pure returns (uint){
-        return _base.decrement();
+        return IntExtended.decrement(_base);
     }
         function testIncrement(uint _base,uint _value)public pure returns (uint){
         return _base.incrementWithValue(_value);
